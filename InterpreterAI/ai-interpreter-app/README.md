@@ -2,7 +2,8 @@
 
 An interactive, chat-style web application that translates English text to multiple languages using OpenAI's GPT-4o-mini model. Built with React and Vite for a modern, responsive user experience.
 
-![AI Language Interpreter Screenshot](screenshot.png)
+<img width="883" height="1097" alt="Screenshot 2025-12-19 at 7 54 03 PM" src="https://github.com/user-attachments/assets/43b191f5-4abb-4a63-81fa-ec2e85a4972a" />
+)
 
 ## 🌟 Features
 
