@@ -7,15 +7,16 @@ const openai = new OpenAI({
 async function main() {
   // Relevant for both inputs and outputs
   const completion = await openai.moderations.create({
-    input: "I hate you!"
+    input: "I hate you!",
+    user: "user_123"  //you can use this to track the user's usage of the API (ALso to monitor for abuse)
   });
   const {flagged, categories} = completion.results[0];
   console.log("flagged", flagged);
   console.log("categories", categories);
 
-//   if (flagged) {
-//       renderWarning(categories);
-//   }
+  if (flagged) {
+      renderWarning(categories);
+  }
 }
 
 main();
